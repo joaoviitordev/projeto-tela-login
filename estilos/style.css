@@ -1,2 +1,58 @@
 @charset "UTF-8";
 
+/*
+    Paleta de Cores
+    preto: #0D0D0D
+    branco: #F2F2F2
+    tons de cinza: #8C8480 | #59514D | #D9CBBA
+*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* a borda faz parte da conta de largura */
+}
+
+body, html{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /*tudo que estiver fora da borda vai ficar esconddo*/
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.502);
+    transition: width 0.5s, heigth 0.5s; /* animação de transição da viewport */
+    transition-timing-function: ease; /* suaviza a animação */
+}
+
+section#login > div#imagem{
+    display: block;
+    background-color: #0D0D0D;
+    background-image: url(../imagem/lua2.jpg);
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 10px;
+}
+
